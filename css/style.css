@@ -12,7 +12,7 @@ body{
         'main'
         'footer'
     ;
-    gap: 20px;
+    gap: 50px;
 }
 
 .grid-header{
@@ -41,6 +41,8 @@ body{
 }
 .grid-footer{
     grid-area: footer;
+    background-color: rgb(69, 69, 250);
+    height: 100%;
 }
 
 .nav{
@@ -98,10 +100,7 @@ body{
     text-align: justify;
 }
 
-#carouselExample{
-    height: 20vw;
-    width: 40vw;
-}
+
 .ProdutosDiv{
     display: flex;
     justify-content: center;
@@ -128,7 +127,7 @@ body{
     display: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(96, 96, 243);
+    background-color: rgb(231 142 31);
 }
 #hamburguer>ul>li>a{
     text-decoration: none;
@@ -138,6 +137,12 @@ body{
 #hamburguer ul{
     margin-top: 10px;
 }
+
+#hamburguer>ul>li>a:hover{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
 .card:hover{
     -webkit-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.20);
     -moz-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.20);
@@ -146,6 +151,24 @@ body{
     cursor: pointer;
 }
 
+#carouselExampleCaptions{
+display: none;
+}
+
+.grid-footer, .grid-footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.grid-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-footer>*{
+    margin: 20px;
+}
 @media screen and (max-width: 600px) {
     .material-symbols-outlined{
         display: block;
@@ -153,6 +176,14 @@ body{
     }
 
     .nav a{
+        display: none;
+    }
+
+    #carouselExampleCaptions{
+        display: block;
+    }
+
+    .ProdutosDiv{
         display: none;
     }
     
